@@ -15,12 +15,8 @@ export const Home= () => {
         <Buttonstart/>
         </div>  
         {store.point.map((e,i)=>{
-            console.log(e)
             return(
-                <Title 
-                key={i}
-                
-                />
+                <Title key={i}/>
             )
         })}
     </div>
