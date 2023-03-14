@@ -19,26 +19,13 @@ export const Gamef = () => {
     function jumpTo(nextMove) {
         setCurrentMove(nextMove);
     }
-    // this is a map
-    const moves = history.map((squares, move) => {
-        let description;
-        description = "hola"
-        
-        return (
-            
-                <button onClick={() => jumpTo(move)}>{description}</button>
-            
-        );
-    });
-    
-
     return (
         <div className="game">
             <div className="game-board">
                 <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay} />
             </div>
             <div className="game-info">
-                <ol>{moves}</ol>
+                <button onClick={()=> jumpTo(0)}>Volver a Jugar</button>
             </div>
         </div>
     );

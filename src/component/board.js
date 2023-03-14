@@ -1,7 +1,7 @@
 import React from 'react'
 import { Square } from './square';
 
-export const Board = ({ xIsNext, squares, onPlay }) => {
+export const Board = ( {xIsNext, squares, onPlay }) => {
    
     function calculateWinner(squares) {
         const lines = [
@@ -38,8 +38,9 @@ export const Board = ({ xIsNext, squares, onPlay }) => {
     
     const winner = calculateWinner(squares);
     let status;
+
     if (winner ) {
-        status = 'Winner: ' + winner;
+        status = 'Winner = ' + winner;
     }else {
         status = 'Turno: ' + (xIsNext  ? 'Player 1' : " Player 2" );
     }
