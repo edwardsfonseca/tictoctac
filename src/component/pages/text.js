@@ -5,8 +5,15 @@ export const Text = () => {
     <div>text</div>
   )
 }
-//.- 1 Boton iniciador de juego
-//.- 1 Boton reseteo de juego
+
+//.- Contador de X y O 
+//.-Contador de jugadas winn y loss
+
+//.- 1 Boton iniciador de juego}
+
+
 //.- Contador de win
-//.- Contador de loser
-// ._ funcionalidades 
+//.
+
+//.- Contador de segundos por turno 35 seg x Player si no se cumple se pasa el turno 
+//.- Alert de winner .

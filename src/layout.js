@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { Home } from "./component/pages/home";
+import Game, { Home } from "./component/pages/home";
 import {Text} from "./component/pages/text"
 import injectContext from "./store/appContext.js";
 
